@@ -16,10 +16,3 @@ def check_drinks(drink_name, drink_ingredients):
             return drink_name + " Cocktail"
 print(check_drinks('Honeydew Cucumber', ['honeydew', 'coconut water', 'mint leaves', 'lime juice', 'salt', 'english cucumber']))
 
-    The function should return the name of the drink followed by "Mocktail" (non-alcoholic) and drink
-    name followed by "Cocktail" (includes alcohol).
-
-    """
-
-    return ""
-
