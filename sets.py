@@ -8,10 +8,9 @@ print(clean_ingredients('Punjabi-Style Chole', ['onions', 'tomatoes', 'ginger pa
 
 
 def check_drinks(drink_name, drink_ingredients):
-    drink_ingredients2 = set(drink_ingredients)
-    for ingredient in drink_ingredients2:
-        if ingredient not in ALCOHOLS:
-            return drink_name + " Mocktail"
-        else:
-            return drink_name + " Cocktail"
+    drink_ingredients_set = set(drink_ingredients)
+    if drink_ingredients_set & ALCOHOLS:
+        return f"{drink_name} Cocktail"
+    else:
+        return f"{drink_name} Mocktail"
 print(check_drinks('Honeydew Cucumber', ['honeydew', 'coconut water', 'mint leaves', 'lime juice', 'salt', 'english cucumber']))
