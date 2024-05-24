@@ -15,4 +15,3 @@ def check_drinks(drink_name, drink_ingredients):
         else:
             return drink_name + " Cocktail"
 print(check_drinks('Honeydew Cucumber', ['honeydew', 'coconut water', 'mint leaves', 'lime juice', 'salt', 'english cucumber']))
-
