@@ -1,14 +1,10 @@
 """Functions to help Azara and Rui locate pirate treasure."""
 
 
-def get_coordinate(record):
-    """Return coordinate value from a tuple containing the treasure name, and treasure coordinate.
+def get_coordinate(tesoro, coordenada):
+    return coordenada
 
-    :param record: tuple - with a (treasure, coordinate) pair.
-    :return: str - the extracted map coordinate.
-    """
-
-    return ""
+print(get_coordinate("Scrimshawed Whale Tooth", "2A"))
 
 
 def convert_coordinate(coordinate):
